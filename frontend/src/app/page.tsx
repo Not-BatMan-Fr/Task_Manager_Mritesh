@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-[#F8FAFC] py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <TaskHeader title="WASSUUPP??" phrase="Another To-Do List 😮" count={tasks.length} />
+        <TaskHeader title="TASK BOARD" phrase="What are your plans for today? 🤦‍♀️" count={tasks.length} />
         
         {/* Animated Creation Bar */}
         <motion.div 

@@ -29,14 +29,14 @@ export const TaskItem = ({ task, onMove, onDelete }: any) => {
       {/* CENTER CONTENT */}
       <div className="flex-grow p-4 flex flex-col justify-between">
         <div className="flex justify-between items-start">
-          <h4 className="font-bold text-slate-800 leading-tight pr-2">
+          <h4 className="font-bold text-slate-400 leading-tight pr-2">
             {task.title}
           </h4>
           
         </div>
           {task.dueDate && (
             <div className="flex items-center gap-1.5 mt-2">
-              <span className="text-[10px] font-medium text-slate-500">🕒
+              <span className="text-[10px] font-medium text-orange-400">🕒
                 {new Date(task.dueDate).toLocaleString([], {
                   month: "short",
                   day: "numeric",
