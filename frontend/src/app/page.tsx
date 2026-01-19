@@ -1,7 +1,7 @@
 import TaskContainer from '@/components/TaskContainer';
 
 export default async function Page() {
-  const res = await fetch('http://localhost:8000/tasks', { cache: 'no-store' });
+  const res = await fetch('http://backend:8000/tasks', { cache: 'no-store' });
   const tasks = await res.json();
 
   return (
