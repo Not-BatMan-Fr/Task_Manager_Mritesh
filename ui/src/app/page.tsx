@@ -2,14 +2,17 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTasks } from '@/hooks/useTasks';
-import { TaskHeader } from '@/components/molecules/TaskHeader';
-import { KanbanBoard } from '@/components/organisms/KanbanBoard';
-import { Input } from '@/components/atoms/Input';
-import { Button } from '@/components/atoms/Button';
-// import { StatusPicker } from '@/components/molecules/StatusPicker';
-import { TaskStatus } from '@/components/atoms/StatusBadge';
-import { DateTimeInput } from '@/components/atoms/DateTimeInput';
+
+// Feature-based imports
+import { useTasks } from '@/features/tasks/hooks/useTasks';
+import { TaskHeader } from '@/features/tasks/components/TaskHeader';
+import { KanbanBoard } from '@/features/tasks/components/KanbanBoard';
+
+// Base component imports
+import { Input } from '@/components/base/Input';
+import { Button } from '@/components/base/Button';
+import { TaskStatus } from '@/components/base/StatusBadge';
+import { DateTimeInput } from '@/components/base/DateTimeInput';
 
 export default function Page() {
   const { tasks, loading, addTask, deleteTask, updateTaskStatus, moveTask } = useTasks();

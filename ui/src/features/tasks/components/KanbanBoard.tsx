@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TaskItem } from '../molecules/TaskItem';
-import { TaskStatus } from '../atoms/StatusBadge';
+import { TaskItem } from './TaskItem';
+import { TaskStatus } from '@/components/base/StatusBadge';
 
 interface KanbanBoardProps {
   tasks: any[];

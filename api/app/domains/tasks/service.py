@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.models import Task
+from app.domains.tasks.models import Task
 import uuid
 
 class TaskRepository:

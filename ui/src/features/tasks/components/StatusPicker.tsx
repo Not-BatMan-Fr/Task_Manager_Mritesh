@@ -1,5 +1,5 @@
-import { BaseSelect } from '../atoms/BaseSelect';
-import { TaskStatus } from '../atoms/StatusBadge';
+import { BaseSelect } from '@/components/base/BaseSelect';
+import { TaskStatus } from '@/components/base/StatusBadge';
 
 interface StatusPickerProps {
   currentStatus: TaskStatus;

@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react';
 import { localStorageService } from '@/services/localStorageService';
 import { apiService } from '@/services/apiService';
-import { TaskStatus } from '@/components/atoms/StatusBadge';
-import { DateTimeInput } from '@/components/atoms/DateTimeInput';
+import { TaskStatus } from '@/components/base/StatusBadge';
 
 export function useTasks() {
   const [tasks, setTasks] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   
   // Future toggle: this will be driven by your Auth Service
-  const isLoggedIn = false; 
+  const isLoggedIn = true; 
 
   const activeService = isLoggedIn ? apiService : localStorageService;
 

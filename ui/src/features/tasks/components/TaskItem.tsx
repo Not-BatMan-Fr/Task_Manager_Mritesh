@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { VerticalNavButton } from "../atoms/VerticalNavButton";
-import { TaskStatus } from "../atoms/StatusBadge";
+import { VerticalNavButton } from "@/components/base/VerticalNavButton";
+import { TaskStatus } from "@/components/base/StatusBadge";
 
 const STATUS_ORDER: TaskStatus[] = ["todo", "in_progress", "done"];
 
