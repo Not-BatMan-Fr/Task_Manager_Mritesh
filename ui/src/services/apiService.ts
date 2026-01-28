@@ -35,7 +35,7 @@ export const apiService = {
     return res.json();
   },
   
-  deleteTask: async (id: string): Promise<void> => {
+  deleteTask: async (id: string | number): Promise<void> => {
     const res = await fetch(`${API_URL}/${id}`, {
       method: 'DELETE',
     });
