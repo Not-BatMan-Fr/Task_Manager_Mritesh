@@ -22,7 +22,7 @@ export const apiService = {
     return res.json();
   },
   
-  updateTask: async (id: string, task: TaskCreate): Promise<Task> => {
+  updateTask: async (id: string | number, task: TaskCreate): Promise<Task> => {
     const res = await fetch(`${API_URL}/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
