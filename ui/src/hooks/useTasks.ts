@@ -33,7 +33,7 @@ export function useTasks() {
   };
 
   //  | number
-  const deleteTask = async (id: string) => {
+  const deleteTask = async (id: string | number) => {
     await activeService.deleteTask(id);
     setTasks(prev => prev.filter(t => t.id !== id));
   };
